@@ -1,23 +1,13 @@
 import React from "react"
+import NavBar from "./navbar"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className="mx-auto w-1/2">
+        <NavBar />
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built by Szymon
-        </footer>
+        <footer>© {new Date().getFullYear()}, Built by Szymon</footer>
       </div>
     </>
   )
